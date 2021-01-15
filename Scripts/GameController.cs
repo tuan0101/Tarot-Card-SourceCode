@@ -48,7 +48,7 @@ public class GameController : MonoBehaviour
             cardModel.transform.eulerAngles = tempRo;
            //cardModel.showModel(cardModel.transform.position);
 
-           cardModel.transform.parent = transform;
+            cardModel.transform.parent = transform;
             cardModel.setPickingPhase(false);
 
             cardCount++;
