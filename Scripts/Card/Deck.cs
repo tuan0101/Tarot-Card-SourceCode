@@ -5,7 +5,7 @@ using UnityEngine;
 public class Deck : MonoBehaviour
 {
     List<int> cards;
-
+    [SerializeField] int cardNum = 22;
 
     // Start is called before the first frame update
     void Awake()
@@ -13,7 +13,6 @@ public class Deck : MonoBehaviour
         CreateDeck();
         Shuffle();
     }
-
 
     public void Shuffle()
     {
@@ -50,5 +49,8 @@ public class Deck : MonoBehaviour
         return cards;
     }
 
-
+    public int getCardNum()
+    {
+        return cardNum;
+    }
 }
