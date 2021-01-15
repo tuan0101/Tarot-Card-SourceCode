@@ -6,20 +6,32 @@ using UnityEngine.SceneManagement;
 
 public class Mainmenu : MonoBehaviour
 {
-  
+    public void PlayStartScene()
+    {
+        SceneManager.LoadScene("StartScene");
+    }
     public void PlayMain()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Main");
     }
 
     public void PlayHistory()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("History");
+    }
+
+    public void PlayResultScene()
+    {
+        SceneManager.LoadScene("ShowResult");
+    }
+
+    public void PlayAR()
+    {
+        SceneManager.LoadScene("ShowResult AR");
     }
 
     public void QuitGame()
     {
         Application.Quit();
     }
-    
 }
